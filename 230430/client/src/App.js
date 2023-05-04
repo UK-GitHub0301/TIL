@@ -1,37 +1,44 @@
-import React, { Component } from "react";
-import logo from "./logo.svg";
+import React from "react";
 import "./App.css";
+import main from "./component/layout/main";
+import logo from "./logo.svg";
 
-class App extends Component {
-  render() {
-    return (
-      <div className="gray-backgound">
-        <img src={logo} lat="logo" />
-        <h2>Let's develop management system!</h2>
-      </div>
-    );
-  }
+function App() {
+  return (
+    <div className="App">
+      <header>
+        <img src={logo} alt="Logo" class="logo"></img>
+        <nav>
+          <ul>
+            <li>
+              <a href="#">Home</a>
+            </li>
+            <li>
+              <a href="#">About</a>
+            </li>
+            <li>
+              <a href="#">Contact</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <main>
+        <section>{/* 첫 번째 섹션의 내용 */}방문자수 그래프</section>
+        <section style={{ display: "flex" }}>
+          <div style={{ width: "50%" }}>
+            {/* 왼쪽 아이템 */}수익/매출 그래프
+          </div>
+          <div style={{ width: "50%" }}>
+            {/* 오른쪽 아이템 */}판매랭크 그래프
+          </div>
+        </section>
+      </main>
+
+      <footer>
+        <p>&copy;2023 My Website. All Rights Reserved.</p>
+      </footer>
+    </div>
+  );
 }
-
-// function App() {
-//   return (
-//     <div className="App">
-//       <header className="App-header">
-//         <img src={logo} className="App-logo" alt="logo" />
-//         <p>
-//           Edit <code>src/App.js</code> and save to reload.
-//         </p>
-//         <a
-//           className="App-link"
-//           href="https://reactjs.org"
-//           target="_blank"
-//           rel="noopener noreferrer"
-//         >
-//           Learn React
-//         </a>
-//       </header>
-//     </div>
-//   );
-// }
 
 export default App;
