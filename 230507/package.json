@@ -1,0 +1,21 @@
+{
+  "name": "230507",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "add": "^2.0.6",
+    "express": "^4.18.2",
+    "google-spreadsheet": "^3.3.0",
+    "nodemon": "^2.0.22",
+    "or": "^0.2.0",
+    "yarn": "^1.22.19"
+  }
+}
